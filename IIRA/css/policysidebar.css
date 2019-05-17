@@ -1,0 +1,134 @@
+﻿.boxes-container .about-sidebar
+{
+	float: left;
+    width: 15%;
+	
+	}
+
+.boxes-container .about-sidebar li a {
+   line-height: .9em;
+    padding: 10px;
+    vertical-align: middle;
+    color: rgb(3, 105, 123);
+    text-align: right;
+    float: right;
+    display: inline-block;
+    width: 100%;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    font-size: 14px;
+}
+
+.boxes-container  .about-sidebar li .current {
+    color: #03697b;
+    font-weight: bold;
+}
+
+.boxes-container .about-sidebar li .current:hover {
+    color: #03697b;
+    padding-right: 10px;
+    cursor: default;
+}
+
+.boxes-container .about-sidebar li a:hover {
+	color: #03697b;
+    padding-right: 13px;
+}
+
+
+ .about-sidebar
+{
+	float: left;
+    width: 15%;
+	
+	}
+.about-sidebar li a {
+   line-height: .9em;
+    padding: 10px;
+    vertical-align: middle;
+    color: rgb(3, 105, 123);
+    text-align: right;
+    float: right;
+    display: inline-block;
+    width: 100%;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    font-size: 14px;
+}
+
+ .about-sidebar li .current {
+    color: #03697b;
+    font-weight: bold;
+}
+.about-sidebar li .current:hover {
+    color: #03697b;
+    padding-right: 10px;
+    cursor: default;
+}
+
+.about-sidebar li a:hover {
+	color: #03697b;
+    padding-right: 13px;
+}
+
+
+@media screen and (max-width:880px)
+	
+	{
+		.boxes-container .about-sidebar
+{
+	
+    width: 100%;
+    	
+	}
+
+
+.boxes-container .about-sidebar li a
+{
+	
+	display: inline-block;
+    background: rgba(0, 104, 122, 0.2);
+ 
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid;
+    color: #f3f3f3;
+		
+	}
+		
+	
+		} 
+		
+		
+		@media screen and (max-width: 770px)
+	
+	{
+	 .about-sidebar
+{
+	    width: 92%;
+    margin: 8px 0 0 0px;
+    
+    	
+	}
+
+#content-container .box
+{
+	
+	   margin-top: 10px;
+  
+	
+	}
+.about-sidebar li a
+{
+	
+	display: inline-block;
+    background: rgba(0, 104, 122, 0.2);
+ 
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid;
+    color: #f3f3f3;
+		
+	}
+		
+		

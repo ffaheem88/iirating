@@ -1,0 +1,303 @@
+﻿body 
+{
+	
+    background: linear-gradient(
+      rgba(228, 228, 228, 0.95), 
+	  rgba(228, 228, 228, 0.95)
+    ), url(../img/dome.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+   font-family: Roboto, Arial, sans-serif;
+	
+
+}
+
+
+#content-container {
+    padding-top: 36px;
+}
+
+.anchor {
+    top: -100px;
+} 
+
+.about-wrapper .sidebar-wrapper {
+    z-index: 500;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 50px;
+    margin: 0 auto;
+}
+
+.about-wrapper .sidebar {
+    background: white;
+    font-size: 14px
+}
+.about-wrapper .sidebar table {
+    width: 100%;
+}
+
+.about-wrapper .sidebar table td {
+          vertical-align: middle;
+    text-align: center;
+    padding: 0px 5px;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    height: 50px;
+    
+}
+
+.about-wrapper .sidebar table td:last-child {
+    border-right: none;
+}
+
+.about-wrapper .sidebar table td a 
+{
+	    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color:rgba(0, 104, 122, 0.8);
+    font-weight: bold;
+    height: 100%;
+    padding: 0px 5px;
+    line-height: 1.2em;
+    transition: all 100ms ease-in-out;
+    vertical-align: middle
+}
+
+.about-wrapper .sidebar table td a:hover {
+	color: rgba(0, 104, 122, 0.93);
+}
+
+.about-wrapper .content {
+    margin-top: 20px;
+}
+
+.about-wrapper .content .box {
+    background: white;
+    padding-bottom: 25px;
+    margin-top: 30px;
+}
+
+.about-wrapper .content .column-cont
+{
+	background: white;
+    padding-bottom: 25px;
+    margin-top: 30px;
+	
+	}
+
+.about-wrapper .content .box .box-title {
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
+   }
+.about-wrapper .content .box:first-child {
+    margin-top: 90px;
+}
+
+.about-wrapper .content .box p {
+    font-weight: normal;
+    color: #333333;
+    line-height: 1.3em;
+    padding: 0px 25px;
+    font-size: 14px;
+    
+}
+
+.about-wrapper .content .box h2 {
+       color: #333333;
+    line-height: 1.3em;
+    padding: 11px 25px;
+    font-weight: bolder;
+    font-size: 20px;
+    background: #F3F3F3;
+}
+
+.about-wrapper .content .box br {
+    -webkit-user-select: none;
+
+}
+    .white-tabs {
+    margin-top: 30px;
+}
+
+
+.white-tabs li
+{
+	width: 33.333%;
+    float: left;
+	
+	}
+	
+	.white-tabs li a
+	{
+		line-height: 50px;
+    display: inline-block;
+    background: white;
+    width: 100%;
+    text-align: center;
+    border-left: 1px solid rgba(0,0,0,0.1);
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+		
+		
+		}
+	
+    button.headeraccordion {
+  color: #000000;
+    cursor: pointer;
+    text-transform: capitalize;
+    background-image: url(../images/blueshare.PNG);
+    background-repeat: no-repeat;
+    line-height: 1.3em;
+    padding: 6px 15px;
+    font-weight: lighter;
+    font-size: 18px;
+    background-color: rgb(243, 243, 243);
+    background-position: left;
+    background-position-x: 98%;
+    width: 100%;
+    }
+    
+    button.headeraccordion:active1
+    
+     
+    {
+    	 background-color: #ddd; 
+    	
+    	} 
+    	
+    	button.headeraccordion:hover
+    	{
+    		 background-color: #ddd; 
+    		
+    		}
+    	
+    .panel1
+    	{
+    		
+    padding: 0px 18px;
+    display: none;
+    background-color: white;
+  
+      		
+    		}
+    
+    .desc
+    {
+    	
+    padding: 30px;   
+    font-size: 14px; 	
+    	}
+    	
+    	.desc img 
+    	{
+    	height: 100px;
+    float: left;
+    display: block;
+    width: 100px;	
+    	}
+    	
+    .desc .managelink
+    {
+     margin: 0px;
+    margin-left: 4px;
+    display: inline-block;
+
+    color: #338694;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    font-size: 14px;
+    	
+    	}
+    	
+    	
+    	.rating-process table {    
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+/* Gray rows get this default styling */
+
+.rating-process table tr {
+/*    border-bottom: 2px solid white;    */
+}
+
+.rating-process table tr th {
+   font-weight: bold;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+    background: white;
+    border-right: 2px solid #d0d0d0;
+    text-transform: uppercase;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    border-bottom: 2px solid #d0d0d0;
+    font-size: 15px;
+}
+
+.rating-process table tr .data {
+  font-weight: normal;
+    width: 71%;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    border-left: 2px solid #d0d0d0;
+    font-size: 14px;
+}
+
+.rating-process table tr td {
+    float: left;
+    padding: 12px;
+    vertical-align: middle;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #d0d0d0;
+    -webkit-transition: all 200ms ease-in-out;
+            transition: all 200ms ease-in-out;
+
+}
+.about-wrapper .content .ratingprocess .box p
+{
+	font-weight: normal;
+    color: #333333;
+    line-height: 1.3em;
+    padding: 0px 25px;
+    font-size: 14px
+	
+	}
+
+/* Blue rows get this styling */
+
+
+
+.rating-process table tr.blue td {
+    background:rgb(107, 162, 171);
+}
+
+/* duration marker */
+
+.rating-process table tr.duration th {
+    width: 100%;
+    background: white;
+    text-align: center;
+    padding: 20px;
+    color: #338694;
+    font-size: 20px;
+    border: none;
+}
+
+.rating-process table tr.duration .data {
+    width: 100%;
+    background: white;
+    text-align: center;
+    padding: 20px;
+    color: #338694;
+    font-size: 20px;
+    border: none;
+}

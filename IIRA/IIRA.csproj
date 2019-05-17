@@ -1,0 +1,390 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4231D42D-DB6D-4684-8414-8D31E85EF18E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IIRA</RootNamespace>
+    <AssemblyName>IIRA</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="About.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="asia.aspx.vb" />
+    <Content Include="bahrainislbnk.aspx" />
+    <Content Include="banklebanon.aspx" />
+    <Content Include="Brochures.aspx" />
+    <Content Include="Brochures.aspx.vb" />
+    <Content Include="codeconduct.aspx" />
+    <Content Include="codeconduct.aspx.vb" />
+    <Content Include="codeofconduct.aspx" />
+    <Content Include="codeofconduct.aspx.vb" />
+    <Content Include="contact.aspx" />
+    <Content Include="contact.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="corporate.aspx" />
+    <Content Include="corporate.aspx.vb" />
+    <Content Include="corprofile.aspx" />
+    <Content Include="corprofile.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="correlation.aspx" />
+    <Content Include="correlation.aspx.vb" />
+    <Content Include="css\about.css" />
+    <Content Include="css\button.css" />
+    <Content Include="css\committe.css" />
+    <Content Include="css\contact.css" />
+    <Content Include="css\definition.css" />
+    <Content Include="css\fiduciarytable.css" />
+    <Content Include="css\global\FONTS.css" />
+    <Content Include="css\global\MAIN.css" />
+    <Content Include="css\global\RESET.css" />
+    <Content Include="css\headermenu.css" />
+    <Content Include="css\home.css" />
+    <Content Include="css\kc-MAIN.css" />
+    <Content Include="css\kc-meth.css" />
+    <Content Include="css\kc-sect.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\loginhome.css" />
+    <Content Include="css\policies-criteria.css" />
+    <Content Include="css\policies.css" />
+    <Content Include="css\policysidebar.css" />
+    <Content Include="css\presentation.css" />
+    <Content Include="css\rating-process.css" />
+    <Content Include="css\rating.css" />
+    <Content Include="css\ratingscale.css" />
+    <Content Include="css\ratingservice.css" />
+    <Content Include="default.aspx" />
+    <Content Include="electric22bn.aspx" />
+    <Content Include="electric6bn.aspx" />
+    <Content Include="ethics.aspx" />
+    <Content Include="ethics.aspx.vb" />
+    <Content Include="favicon.ico" />
+    <Content Include="fiducrating.aspx" />
+    <Content Include="fiducrating.aspx.vb" />
+    <Content Include="financial.aspx" />
+    <Content Include="financial.aspx.vb" />
+    <Content Include="gcc.aspx" />
+    <Content Include="gcc.aspx.vb" />
+    <Content Include="Global-Licenses.aspx" />
+    <Content Include="Global-Licenses.aspx.vb" />
+    <Content Include="Home.aspx" />
+    <Content Include="Home.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="images\aafaq-Logo.png" />
+    <Content Include="images\abc.png" />
+    <Content Include="images\ABG-Logo.PNG" />
+    <Content Include="images\ABG.jpg" />
+    <Content Include="images\ACWA.png" />
+    <Content Include="images\albaraka.png" />
+    <Content Include="images\aljazira.png" />
+    <Content Include="images\BahSov.PNG" />
+    <Content Include="images\BAJ-Logo.PNG" />
+    <Content Include="images\bisb.png" />
+    <Content Include="images\blueshare.PNG" />
+    <Content Include="images\BoK-Logo.PNG" />
+    <Content Include="images\burger.png" />
+    <Content Include="images\Chart.png" />
+    <Content Include="images\dib_logo.png" />
+    <Content Include="images\dp.png" />
+    <Content Include="images\excel_icon.png" />
+    <Content Include="images\gfh.png" />
+    <Content Include="images\iirating pic\1.png" />
+    <Content Include="images\iirating pic\1text.png" />
+    <Content Include="images\iirating pic\2.png" />
+    <Content Include="images\iirating pic\2text.png" />
+    <Content Include="images\iirating pic\3.png" />
+    <Content Include="images\iirating pic\3text.png" />
+    <Content Include="images\iirating pic\4.png" />
+    <Content Include="images\iirating pic\4text.png" />
+    <Content Include="images\iirating pic\5.png" />
+    <Content Include="images\iirating pic\5text.png" />
+    <Content Include="images\iirating pic\6.png" />
+    <Content Include="images\iirating pic\6text.png" />
+    <Content Include="images\iirating pic\7.png" />
+    <Content Include="images\iirating pic\7text.png" />
+    <Content Include="images\iirating pic\Collage-10.png" />
+    <Content Include="images\iirating pic\iiralogo.png" />
+    <Content Include="images\iirating pic\New Imagelogo.png" />
+    <Content Include="images\JIB-Logo.PNG" />
+    <Content Include="images\KE-Logo.PNG" />
+    <Content Include="images\KTPB-Logo.PNG" />
+    <Content Include="images\Malaysia.png" />
+    <Content Include="images\New Imagelogo.png" />
+    <Content Include="images\New Imagelogo1.png" />
+    <Content Include="images\pdf.jpg" />
+    <Content Include="images\Rating Process.png" />
+    <Content Include="images\TIIC.PNG" />
+    <Content Include="images\turkey-flag2.PNG" />
+    <Content Include="images\unitedcapital.png" />
+    <Content Include="images\whyrating.png" />
+    <Content Include="images\worldmap.png" />
+    <Content Include="insurer.aspx" />
+    <Content Include="insurer.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="islamicinsucompany.aspx" />
+    <Content Include="islfinance.aspx" />
+    <Content Include="issue.aspx" />
+    <Content Include="issue.aspx.vb" />
+    <Content Include="jordanislamicbank.aspx" />
+    <Content Include="js\about.js" />
+    <Content Include="js\dropdown.js" />
+    <Content Include="js\home.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\lib\jquery-1.11.3.min.js" />
+    <Content Include="js\lib\plugins.js" />
+    <Content Include="js\login.js" />
+    <Content Include="js\MAIN.js" />
+    <Content Include="js\slides.js" />
+    <Content Include="kc-meth.aspx" />
+    <Content Include="kc-meth.aspx.vb" />
+    <Content Include="Kingofbahrain.aspx" />
+    <Content Include="leadership.aspx" />
+    <Content Include="leadership.aspx.vb" />
+    <Content Include="levant.aspx" />
+    <Content Include="levant.aspx.vb" />
+    <Content Include="login.aspx" />
+    <Content Include="login.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="loginhome.aspx" />
+    <Content Include="loginhome.aspx.vb" />
+    <Content Include="loginpages\abcislbank.aspx" />
+    <Content Include="loginpages\abcislbank.aspx.vb" />
+    <Content Include="loginpages\ACWA-Power.aspx" />
+    <Content Include="loginpages\ACWA-Power.aspx.vb" />
+    <Content Include="loginpages\albarakabankinggrp.aspx" />
+    <Content Include="loginpages\albarakabankinggrp.aspx.vb" />
+    <Content Include="loginpages\albarakaislbnk.aspx" />
+    <Content Include="loginpages\albarakaislbnk.aspx.vb" />
+    <Content Include="loginpages\AlbarakAlgeria.aspx" />
+    <Content Include="loginpages\AlbarakAlgeria.aspx.vb" />
+    <Content Include="loginpages\bahrainislbnk.aspx" />
+    <Content Include="loginpages\bahrainislbnk.aspx.vb" />
+    <Content Include="loginpages\bankegypt.aspx" />
+    <Content Include="loginpages\bankegypt.aspx.vb" />
+    <Content Include="loginpages\bankindonesia.aspx" />
+    <Content Include="loginpages\bankindonesia.aspx.vb" />
+    <Content Include="loginpages\banklebanon.aspx" />
+    <Content Include="loginpages\banklebanon.aspx.vb" />
+    <Content Include="loginpages\banksudan.aspx" />
+    <Content Include="loginpages\banksudan.aspx.vb" />
+    <Content Include="loginpages\banksyria.aspx" />
+    <Content Include="loginpages\banksyria.aspx.vb" />
+    <Content Include="loginpages\banktunisia.aspx" />
+    <Content Include="loginpages\banktunisia.aspx.vb" />
+    <Content Include="loginpages\bankturk.aspx" />
+    <Content Include="loginpages\bankturk.aspx.vb" />
+    <Content Include="loginpages\bnkaljazira.aspx" />
+    <Content Include="loginpages\bnkaljazira.aspx.vb" />
+    <Content Include="loginpages\bnkkhartom.aspx" />
+    <Content Include="loginpages\bnkkhartom.aspx.vb" />
+    <Content Include="loginpages\capitalbank.aspx" />
+    <Content Include="loginpages\capitalbank.aspx.vb" />
+    <Content Include="loginpages\dubaiislamicbnk.aspx" />
+    <Content Include="loginpages\dubaiislamicbnk.aspx.vb" />
+    <Content Include="loginpages\electric22bn.aspx" />
+    <Content Include="loginpages\electric22bn.aspx.vb" />
+    <Content Include="loginpages\electric6bn.aspx" />
+    <Content Include="loginpages\electric6bn.aspx.vb" />
+    <Content Include="loginpages\gulffinance.aspx" />
+    <Content Include="loginpages\gulffinance.aspx.vb" />
+    <Content Include="loginpages\insurancecompany.aspx" />
+    <Content Include="loginpages\insurancecompany.aspx.vb" />
+    <Content Include="loginpages\islamicinsucompany.aspx" />
+    <Content Include="loginpages\islamicinsucompany.aspx.vb" />
+    <Content Include="loginpages\islfinance.aspx" />
+    <Content Include="loginpages\islfinance.aspx.vb" />
+    <Content Include="loginpages\jordanbank.aspx" />
+    <Content Include="loginpages\jordanbank.aspx.vb" />
+    <Content Include="loginpages\jordanislamicbank.aspx" />
+    <Content Include="loginpages\jordanislamicbank.aspx.vb" />
+    <Content Include="loginpages\jordanislbank.aspx" />
+    <Content Include="loginpages\jordanislbank.aspx.vb" />
+    <Content Include="loginpages\Kingofbahrain.aspx" />
+    <Content Include="loginpages\Kingofbahrain.aspx.vb" />
+    <Content Include="loginpages\KuvetytTurk.aspx" />
+    <Content Include="loginpages\KuvetytTurk.aspx.vb" />
+    <Content Include="loginpages\MalaysiaRating.aspx" />
+    <Content Include="loginpages\MalaysiaRating.aspx.vb" />
+    <Content Include="loginpages\maumlatindo.aspx" />
+    <Content Include="loginpages\maumlatindo.aspx.vb" />
+    <Content Include="loginpages\republicofturkey.aspx" />
+    <Content Include="loginpages\republicofturkey.aspx.vb" />
+    <Content Include="map.aspx" />
+    <Content Include="map.aspx.vb" />
+    <Content Include="new.aspx" />
+    <Content Include="new.aspx.vb" />
+    <Content Include="news.aspx" />
+    <Content Include="news.aspx.vb" />
+    <Content Include="northafrica.aspx" />
+    <Content Include="northafrica.aspx.vb" />
+    <Content Include="policies.aspx" />
+    <Content Include="policies.aspx.vb" />
+    <Content Include="Presentation.aspx" />
+    <Content Include="Presentation.aspx.vb" />
+    <Content Include="pressrelease.aspx" />
+    <Content Include="pressrelease.aspx.vb" />
+    <Content Include="ratingappeal.aspx" />
+    <Content Include="ratingappeal.aspx.vb" />
+    <Content Include="ratingcomconduct.aspx" />
+    <Content Include="ratingcomconduct.aspx.vb" />
+    <Content Include="ratingcommit.aspx" />
+    <Content Include="ratingcommit.aspx.vb" />
+    <Content Include="ratingcommittee.aspx" />
+    <Content Include="ratingcommittee.aspx.vb" />
+    <Content Include="ratingdefinition.aspx" />
+    <Content Include="ratingdefinition.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ratingFeePolicy.aspx" />
+    <Content Include="ratingFeePolicy.aspx.vb" />
+    <Content Include="ratingprocess.aspx" />
+    <Content Include="ratingprocess.aspx.vb" />
+    <Content Include="ratings.aspx" />
+    <Content Include="ratings.aspx.vb" />
+    <Content Include="ratingscale.aspx" />
+    <Content Include="ratingscale.aspx.vb" />
+    <Content Include="Ratingservice.aspx" />
+    <Content Include="Ratingservice.aspx.vb" />
+    <Content Include="ratingtype.aspx" />
+    <Content Include="ratingtype.aspx.vb" />
+    <Content Include="resource.aspx" />
+    <Content Include="resource.aspx.vb" />
+    <Content Include="shareholder.aspx" />
+    <Content Include="shareholder.aspx.vb" />
+    <Content Include="sharia.aspx" />
+    <Content Include="sharia.aspx.vb" />
+    <Content Include="south.aspx" />
+    <Content Include="south.aspx.vb" />
+    <Content Include="sovereign.aspx" />
+    <Content Include="sovereign.aspx.vb" />
+    <Content Include="techpart.aspx" />
+    <Content Include="techpart.aspx.vb" />
+    <Content Include="turkey.aspx" />
+    <Content Include="turkey.aspx.vb" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="webconst.aspx" />
+    <Content Include="webconst.aspx.vb" />
+    <Content Include="whyrating.aspx" />
+    <Content Include="whyrating.aspx.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\iirating pic\Thumbs.db" />
+    <Content Include="images\Thumbs.db" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56568</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56568/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
